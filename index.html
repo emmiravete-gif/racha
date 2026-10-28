@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Racha</title>
+  <meta name="description" content="Tracker de hábitos, rachas, objetivos y fechas importantes.">
+  <meta name="theme-color" content="#FDF8F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16120F" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Racha">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="screen"></main>
+  <button id="fab" class="fab" data-act="fab"><span class="fab-plus">+</span><span id="fab-label">Hábito</span></button>
+  <nav class="tabbar" id="tabbar">
+    <button data-act="tab" data-tab="today"><span class="ti">☀️</span><span>Hoy</span></button>
+    <button data-act="tab" data-tab="calendar"><span class="ti">🗓️</span><span>Calendario</span></button>
+    <button data-act="tab" data-tab="progress"><span class="ti">📈</span><span>Progreso</span></button>
+    <button data-act="tab" data-tab="goals"><span class="ti">🎯</span><span>Metas</span></button>
+  </nav>
+  <div id="sheet-root"></div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <script src="app.js"></script>
+</body>
+</html>
